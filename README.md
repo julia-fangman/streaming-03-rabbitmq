@@ -1,4 +1,5 @@
 # streaming-03-rabbitmq
+## Julia Fangman's Project 3
 ## Github Link: https://github.com/julia-fangman/streaming-03-rabbitmq 
 
 > Get started with RabbitMQ, a message broker, that enables multiple processes to communicate reliably through an intermediary.
@@ -12,7 +13,6 @@ We use the built-in Python utility `venv` to create our virtual environment.
 There are other options, but this is simplest and most common. 
 We create the environment as a subfolder of this repo named .venv to keep it away from our project code. 
 
-
 ## Prerequisites
 
 1. Git
@@ -21,22 +21,20 @@ We create the environment as a subfolder of this repo named .venv to keep it awa
 1. VS Code Extension: Python (by Microsoft)
 1. RabbitMQ Server installed and running locally
 
-## Before You Begin
+## Before You Begin (streaming-03-rabbitmq)
 
 1. Fork this starter repo into your GitHub account.
 1. Clone your repo down to your machine.
 1. Explore your new project repo in VS Code on your local machine.
 
-## Task 1. Create a Python Virtual Environment
+## Task 1. Create a Python Virtual Environment (called .venv)
 
 We will create a local Python virtual environment to isolate our project's third-party dependencies from other projects.
 
 1. Open a terminal window in VS Code.
 1. Use the built-in Python utility venv to create a new virtual environment named `.venv` in the current directory.
 
-```shell
-python -m venv .venv
-```
+python3 -m venv .venv 
 
 Verify you get a new .venv directory in your project. 
 We use .venv as the name to keep it away from our project files. 
@@ -45,8 +43,7 @@ We use .venv as the name to keep it away from our project files.
 
 In the same VS Code terminal window, activate the virtual environment.
 
-- On Windows, run: `.venv\Scripts\activate`
-- On Linux/MacOS, run: `source .venv/bin/activate`
+- On MacOS, run: `source .venv/bin/activate`
 
 Verify you see the virtual environment name (.venv) in your terminal prompt.
 
@@ -76,7 +73,8 @@ python util_aboutenv.py
 python util_aboutrabbit.py
 pip list
 ```
-Creates util_about.txt, aboutenv.txt, aboutrabbit.txt :) 
+
+Which creates util_about.txt, aboutenv.txt, aboutrabbit.txt :) 
 
 ## Task 5. Read
 
@@ -99,26 +97,12 @@ We can execute additional commands in the terminal as soon as it finishes.
 1. Read v1_listen_for_messages.py (and the tutorial)
 1. Run the file.
 
-You'll need to fix an error in the program to get it to run.
-Once it runs successfully, will it terminate on its own? How do you know? 
-As long as the process is running, we cannot use this terminal for other commands. 
 
 ## Task 8. Open a New Terminal / Emit More Messages
 
 1. Open a new terminal window.
 1. Use this new window to run emit_message.py again.
-1. Watch the listing terminal - what do you see?  A second message?
-
-Sending the same message each time is kind of boring. This time:
-
-1. Where is the message defined? How can you change it?
-1. Modify emit_message.py to emit a different message. 
-1. Execute the updated emit_message.py. 
-1. Watch what happens in the listening terminal.
-
-Repeat this process several times - emit at least 4 different messages.
-Don't worry - it's just code. We can always revert back (try the 'undo' command in VS Code) to a version that works. You can't hurt anything.
-
+1. Watch the listing terminal.
  
 ![Version 1 w/ 5 different messages:](Working%20V1.png)
 
