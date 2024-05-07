@@ -1,4 +1,5 @@
 # streaming-03-rabbitmq
+## Github Link: https://github.com/julia-fangman/streaming-03-rabbitmq 
 
 > Get started with RabbitMQ, a message broker, that enables multiple processes to communicate reliably through an intermediary.
 
@@ -75,9 +76,7 @@ python util_aboutenv.py
 python util_aboutrabbit.py
 pip list
 ```
-
-![verifying setup](./images/verify-setup.png)
-
+Creates util_about.txt, aboutenv.txt, aboutrabbit.txt :) 
 
 ## Task 5. Read
 
@@ -119,6 +118,10 @@ Sending the same message each time is kind of boring. This time:
 
 Repeat this process several times - emit at least 4 different messages.
 Don't worry - it's just code. We can always revert back (try the 'undo' command in VS Code) to a version that works. You can't hurt anything.
+
+ 
+![Version 1 w/ 5 different messages:](Working%20V1.png)
+
 
 ## Task 9. Save Time & Effort: Don't Repeat Yourself
 
