@@ -1,17 +1,5 @@
-"""
-
-Message listener 
-
-Description:
-This script continuously listens for messages on a named queue.
-This terminal must be open and dedicated to this process. 
-(If you want to emit messages, open a different terminal window.)
-
-Remember:
-- Use Control + C to close a terminal and end the listening process.
-- Use the up arrow to recall the last command executed in the terminal.
-"""
-
+# Julia Fangman
+# May 7, 2024
 
 # Import necessary modules from the Python Standard Library
 import sys
@@ -51,7 +39,7 @@ def process_message(ch, method, properties, body):
 # define a main function to run the program
 # pass in the hostname as a string parameter if you like
 # if no argument is provided, set a default value to localhost
-def main(hn: str = "localhosttt"):
+def main(hn: str = "localhost"):
     """Main program entry point."""
 
     # when a statement can go wrong, use a try-except block
