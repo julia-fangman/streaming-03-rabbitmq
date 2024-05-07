@@ -1,27 +1,3 @@
-"""
-
-Listens for messages on the queue.
-This process runs continuously. 
-
-Approach
----------
-Simple - one producer / one consumer.
-
-
-Since this process runs continuously, 
-if we want to emit more messages, 
-we'll need to open a new terminal window.
-
-
-Terminal Reminders
-------------------
-
-- Use Control c to close a terminal and end a process.
-
-- Use the up arrow to get the last command executed.
-
-"""
-
 # you can add multiple imports on one line
 # but we don't recommend it for readability
 import pika, sys, os
