@@ -1,8 +1,3 @@
-"""
-    This program sends a message to a queue on the RabbitMQ server.
-
-"""
-
 # add imports at the beginning of the file
 import pika
 
@@ -15,11 +10,14 @@ ch = conn.channel()
 # use the channel to declare a queue
 ch.queue_declare(queue="hello")
 
+# define the message to be sent 
+message = "Message 5"
+
 # use the channel to publish a message to the queue
-ch.basic_publish(exchange="", routing_key="hello", body="Hello World!")
+ch.basic_publish(exchange="", routing_key="hello", body= message)
 
 # print a message to the console for the user
-print(" [x] Sent 'Hello World!'")
+print(f" [x] Sent '{message}'")
 
 # close the connection to the server
 conn.close()
